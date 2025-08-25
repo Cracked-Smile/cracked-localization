@@ -1,0 +1,21 @@
+{
+    "name": "CrackedLocalization",
+    "rootNamespace": "CrackedSmile.Localization",
+    "references": [
+        "Unity.Localization",
+        "Unity.TextMeshPro",
+        "Unity.ResourceManager",
+        "UniTask",
+        "UniTask.Addressables",
+        "Unity.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

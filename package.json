@@ -1,0 +1,16 @@
+{
+  "name": "com.crackedsmile.localization",
+  "displayName": "Cracked Localization",
+  "version": "0.0.1",
+  "unity": "2021.3",
+  "description": "Wrapper over Unity Localization that makes it usable.",
+  "keywords": ["tools", "runtime", "cracked", "localization"],
+  "author": { "name": "Cracked Smile", "url": "https://github.com/Cracked-Smile" },
+  "documentationUrl": "https://github.com/Cracked-Smile/cracked-localization/#readme",
+  "changelogUrl": "https://github.com/Cracked-Smile/cracked-localization/releases",
+  "licensesUrl": "https://github.com/Cracked-Smile/cracked-localization/blob/master/LICENSE",
+  "dependencies": {
+    "com.unity.localization": "1.5.7",
+    "com.unity.ugui": "2.0.0"
+  }
+}
