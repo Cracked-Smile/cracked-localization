@@ -10,15 +10,15 @@ Ultra-simple wrapper around Unity Localization that makes it actually easy to us
 
 ## How To Use
 ### Dynamic Localized String
-`DynamicLocalizedString` is a MonoBehaviour that probably will solve 99% of your needs.  
-It automatically refreshes the string based on the current locale. Works in both EditMode and PlayMode.
-Just select the string you want this text to have and reference `TMP_Text` the localized text will be applied to.  
+`DynamicLocalizedString` is a MonoBehaviour that will likely cover 99% of your needs.
+It automatically refreshes the string based on the current locale and works in both **Edit Mode** and **Play Mode**.
+Simply select the string you want this text to use, and reference the `TMP_Text` component where the localized text should be applied.
 <img width="864" height="119" alt="image" src="https://github.com/user-attachments/assets/f553e2e3-c56f-48d7-b786-3de42952335c" />
 
-It is also dynamic, what means that it also can have dynamic arguments.  
-Arguments should have the next format in a localized string: `{0}`, `{1}`, `{2}` etc. Example: `"Score: {0}, Time spent: {1}"`  
+It is also dynamic, which means it can include dynamic arguments.  
+Arguments in a localized string should use the following format: `{0}`, `{1}`, `{2}`, and so on.  
 
-Arguments can be set like this:
+Arguments can be set as follows:
 ```cs
 int score = 123;
 int timeSpent = 60;
@@ -26,7 +26,7 @@ _scoreLocalizedText.SetArguments(score, timeSpent); // Result: "Score: 123, Time
 ```
 
 ### Missing arguments bahaviour
-Allows to select what should happen when the arguments were not provided. Works in both EditMode and PlayMode.
+Allows to select what should happen when the arguments were not provided. Works in both **EditMode** and **PlayMode**.
 ![Aug-27-2025 13-23-31](https://github.com/user-attachments/assets/a9411f91-44a5-40f0-9108-05742d75ca04)
 
 ### LocalizationService
