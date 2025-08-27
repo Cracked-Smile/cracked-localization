@@ -66,7 +66,7 @@ namespace CrackedSmile.Localization.Services
 		
 		public async Task<string> GetLocalizedStringAsTask(string tableName, string entryName, params object[] args)
 		{
-			string localizedString = await LocalizationSettings.StringDatabase.GetLocalizedStringAsync(tableName, entryName, args);
+			string localizedString = await LocalizationSettings.StringDatabase.GetLocalizedStringAsync(tableName, entryName, args).Task;
 			return localizedString;
 		}
 		
