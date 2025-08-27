@@ -8,6 +8,18 @@ Ultra-simple wrapper around Unity Localization that makes it actually easy to us
 > Supports async string load with UniTasks.  
 > Just add `CRACKED_LOCALIZATION_UNITASK_SUPPORT` define.
 
+## Installation
+### Via Git URL (UPM)
+1. Open **Window → Package Manager**.
+2. Click **+ → Add package from git URL…**
+3. Paste your repo URL, e.g.  
+```
+https://github.com/Cracked-Smile/cracked-localization#upm
+```
+4. Click `Add`.
+<img width="564" height="143" alt="image" src="https://github.com/user-attachments/assets/6f1d644c-2ad8-49f3-a81d-2126bbb0fe28" />
+<img width="567" height="117" alt="image" src="https://github.com/user-attachments/assets/e8536c99-c735-425b-a606-88fb8c2d68ec" />
+
 ## How To Use
 ### Create the Localization Settings
 The Project's Localization Settings is an Asset. To create this Asset, go to **Edit > Project Settings > Localization** and click **Create**.  
