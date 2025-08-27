@@ -14,7 +14,7 @@ Ultra-simple wrapper around Unity Localization that makes it actually easy to us
 2. Click **+ → Add package from git URL…**
 3. Paste your repo URL, e.g.  
 ```
-https://github.com/Cracked-Smile/cracked-localization#upm
+https://github.com/Cracked-Smile/cracked-localization.git#upm
 ```
 4. Click `Add`.
 <img width="564" height="143" alt="image" src="https://github.com/user-attachments/assets/6f1d644c-2ad8-49f3-a81d-2126bbb0fe28" />
