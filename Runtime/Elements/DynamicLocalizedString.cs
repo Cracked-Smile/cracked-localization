@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -14,6 +15,9 @@ namespace CrackedSmile.Localization.Elements
 		
 		[Tooltip("Behavior to apply when the localized string contains argument placeholders but no arguments have been provided.")]
 		[SerializeField] private MissingArgumentsBehavior missingArgumentsBehavior = MissingArgumentsBehavior.EraseArguments;
+
+		[Tooltip("List of arguments to automatically apply to the localized string on refresh. These will be overridden if SetArguments is called.")]
+		[SerializeField] private List<string> autoArguments;
 
 		readonly string _argumentPattern = @"\{[^{}]*\}";
 		private bool _stringSubscribed;
@@ -97,17 +101,31 @@ namespace CrackedSmile.Localization.Elements
 			}
 		}
 
-		private void Refresh()
+		public void Refresh()
 		{
 			if (localizedString == null || textField == null)
 				return;
 
 			localizedString.RefreshString();
+
+			if (autoArguments.Count > 0)
+			{
+				object[] objectArguments = new object[autoArguments.Count];
+				
+				for (int i = 0; i < autoArguments.Count; i++)
+				{
+					objectArguments[i] = autoArguments[i];
+				}
+
+				localizedString.Arguments = objectArguments;
+			}
 		}
 
 		public void SetArguments(params object[] args)
 		{
-			if (localizedString == null) return;
+			if (localizedString == null) 
+				return;
+			
 			localizedString.Arguments = args;
 			Refresh();
 		}
